@@ -93,7 +93,7 @@ public class DataLoader implements CommandLineRunner {
         catVisit.setDescription("Sneezy Kitty");
 
         visitService.save(catVisit);
-        System.out.println("Loaded Owners....");
+        System.out.println("Loaded owners....");
 
         Vet vet1 = new Vet();
         vet1.setFirstName("Sam");
@@ -107,6 +107,6 @@ public class DataLoader implements CommandLineRunner {
         vet2.getSpecialities().add(savedSurgery);
         vetService.save(vet2);
 
-        System.out.println("Loaded Vets.....");
+        System.out.println("Loaded vets.....");
     }
 }
